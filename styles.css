@@ -3,7 +3,6 @@ body {
   background-color: #fdfdfd;
   color: #333;
   margin: 0;
-  padding: 0;
 }
 
 header {
@@ -11,10 +10,6 @@ header {
   background-color: #00b894;
   color: white;
   padding: 2rem 1rem;
-}
-
-header h1 {
-  margin-bottom: 0.5rem;
 }
 
 main {
@@ -52,32 +47,189 @@ main {
 .harga {
   font-weight: bold;
   color: #00b894;
-  margin-top: 0.5rem;
 }
 
 .btn-pesan {
-  display: inline-block;
-  margin-top: 0.5rem;
+  margin-top: .5rem;
   background-color: #00b894;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 6px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.btn-pesan:hover {
-  background-color: #019874;
-}
-
-#ulasan, #kontak {
-  margin-top: 2rem;
+  border: none;
+  cursor: pointer;
 }
 
 footer {
   text-align: center;
   background-color: #00b894;
   color: white;
-  padding: 1rem 0;
+  padding: 1rem;
   margin-top: 2rem;
+}
+
+/* FITUR TAMBAHAN (MINIMAL, TIDAK MERUSAK) */
+#cart-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #00b894;
+  color: white;
+  padding: 12px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#cart-count {
+  background: red;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+#toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #00b894;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  display: none;
+}
+
+/* ===== MODAL CHECKOUT (PERBAIKAN) ===== */
+#cart-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #ffffff;
+  padding: 24px 22px;
+  border-radius: 14px;
+  width: 90%;
+  max-width: 360px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.2);
+  animation: scaleIn .25s ease;
+  position: relative;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.modal-content ul {
+  padding-left: 18px;
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  text-align: center;
+}
+
+.modal-content button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#qrcode {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #999;
+}
+
+.close:hover {
+  color: #333;
+}
+
+
+/* ===== KONTAK ===== */
+#kontak {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.kontak-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.kontak-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #00b894;
+  font-size: 14px;
+  transition: .3s;
+}
+
+.kontak-item i {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.kontak-item:hover {
+  color: #019874;
+  transform: translateY(-3px);
+}
+
+/* ===== RESPONSIVE MOBILE (2 KOLOM) ===== */
+@media (max-width: 768px) {
+  .produk-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .produk-card {
+    padding: 0.8rem;
+  }
+
+  .produk-card h3 {
+    font-size: 16px;
+  }
+
+  .produk-card p {
+    font-size: 14px;
+  }
+
+  .harga {
+    font-size: 15px;
+  }
+
+  .btn-pesan {
+    font-size: 14px;
+    padding: 0.45rem 0.6rem;
+  }
 }
