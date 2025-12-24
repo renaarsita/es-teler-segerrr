@@ -3,11 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Es Teler Segar — Manis, Lembut, dan Bikin Nagih!</title>
-  <meta name="description" content="Es Teler Segar — minuman khas Indonesia dengan campuran buah segar seperti alpukat, kelapa muda, nangka, dan susu kental manis. Tersedia berbagai varian rasa!" />
-  <link rel="stylesheet" href="styles.css" />
 
-  <!-- Google tag (gtag.js) -->
+  <title>Es Teler Segar – UMKM Kuliner Mahasiswa Tangerang</title>
+
+<meta name="description" content="Es Teler Segar adalah usaha es teler UMKM mahasiswa yang menyediakan varian es teler lezat dan segar dengan harga terjangkau.">
+<meta name="keywords" content="es teler segar, es teler murah, es teler UMKM, minuman segar">
+<meta name="author" content="Rena Arsita">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+
+    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0N2WG6HEH"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -19,85 +27,218 @@
 </head>
 
 <body>
-  <header>
-    <h1>Es Teler Segar 🍹</h1>
-    <p>Manis, lembut, dan bikin nagih! 🌴🍈🥥</p>
-  </header>
 
-  <main>
-    <!-- ===== DAFTAR PRODUK ===== -->
-    <section id="produk">
-      <h2>Daftar Menu Es Teler</h2>
-      <div class="produk-container">
+<header>
+  <h1>Es Teler Segar – UMKM Kuliner Mahasiswa</h1>
+  <p>Manis, lembut, dan bikin nagih! Minuman khas Indonesia 🌴🍈🥥</p>
+</header>
 
-        <!-- Produk 1 -->
-        <div class="produk-card">
-          <img src="esteler.png" alt="Es Teler Original" class="produk-img">
-          <h3>Es Teler Original</h3>
-          <p>Campuran alpukat, kelapa muda, nangka, dan susu kental manis yang segar dan nikmat.</p>
-          <p class="harga">Rp 10.000</p>
-          <a href="https://wa.me/6285158386044?text=Halo%20saya%20ingin%20pesan%20Es%20Teler%20Original" target="_blank" class="btn-pesan">Pesan Sekarang</a>
-        </div>
+<main>
 
-        <!-- Produk 2 -->
-        <div class="produk-card">
-          <img src="durian.png" alt="Es Teler Durian" class="produk-img">
-          <h3>Es Teler Durian</h3>
-          <p>Varian favorit dengan tambahan durian asli Medan. Rasa legitnya bikin ketagihan!</p>
-          <p class="harga">Rp 15.000</p>
-          <a href="https://wa.me/6285158386044?text=Halo%20saya%20ingin%20pesan%20Es%20Teler%20Durian" target="_blank" class="btn-pesan">Pesan Sekarang</a>
-        </div>
+<section id="produk">
+  <h2>Daftar Menu Es Teler</h2>
 
-        <!-- Produk 3 -->
-        <div class="produk-card">
-          <img src="spesial.png" alt="Es Teler Alpukat Spesial" class="produk-img">
-          <h3>Es Teler Alpukat Spesial</h3>
-          <p>Dominan alpukat matang dengan tambahan susu dan sirup pandan yang harum.</p>
-          <p class="harga">Rp 18.000</p>
-          <a href="https://wa.me/6285158386044?text=Halo%20saya%20ingin%20pesan%20Es%20Teler%20Alpukat%20Spesial" target="_blank" class="btn-pesan">Pesan Sekarang</a>
-        </div>
+  <div class="produk-container">
 
-        <!-- Produk 4 -->
-        <div class="produk-card">
-          <img src="matcha.png" alt="Es Teler Matcha" class="produk-img">
-          <h3>Es Teler Matcha</h3>
-          <p>Dengan Matcha sebagai pelengkap Segar banget buat cuaca panas!</p>
-          <p class="harga">Rp 13.000</p>
-          <a href="https://wa.me/6285158386044?text=Halo%20saya%20ingin%20pesan%20Es%20Teler%20Mix%20Fruit" target="_blank" class="btn-pesan">Pesan Sekarang</a>
-        </div>
+    <!-- PRODUK 1 -->
+    <div class="produk-card">
+      <img src="esteler.png" class="produk-img">
+      <h3>Es Teler Original</h3>
+      <p>Campuran alpukat, kelapa muda, nangka, dan susu.</p>
+      <p class="harga">Rp 10.000</p>
+      <button class="btn-pesan btn-order" data-nama="Es Teler Original" data-harga="10000">
+        Pesan Sekarang
+      </button>
+    </div>
 
-        <!-- Produk 5 -->
-        <div class="produk-card">
-          <img src="coklat.png" alt="Es Teler Coklat" class="produk-img">
-          <h3>Es Teler Coklat</h3>
-          <p>Dengan Coklat sebagai pelengkap Segar banget buat cuaca panas!</p>
-          <p class="harga">Rp 13.000</p>
-          <a href="https://wa.me/6285158386044?text=Halo%20saya%20ingin%20pesan%20Es%20Teler%20Mix%20Fruit" target="_blank" class="btn-pesan">Pesan Sekarang</a>
-        </div>
+    <!-- PRODUK 2 -->
+    <div class="produk-card">
+      <img src="durian.png" class="produk-img">
+      <h3>Es Teler Durian</h3>
+      <p>Tambahan durian asli Medan.</p>
+      <p class="harga">Rp 15.000</p>
+      <button class="btn-pesan btn-order" data-nama="Es Teler Durian" data-harga="15000">
+        Pesan Sekarang
+      </button>
+    </div>
 
-      </div>
-    </section>
+    <!-- PRODUK 3 -->
+    <div class="produk-card">
+      <img src="spesial.png" class="produk-img">
+      <h3>Es Teler Alpukat Spesial</h3>
+      <p>Dominan alpukat matang creamy.</p>
+      <p class="harga">Rp 18.000</p>
+      <button class="btn-pesan btn-order" data-nama="Es Teler Alpukat Spesial" data-harga="18000">
+        Pesan Sekarang
+      </button>
+    </div>
 
-    <!-- ===== ULASAN ===== -->
-    <section id="ulasan">
-      <h2>Ulasan Pelanggan</h2>
-      <blockquote>“Segar banget, apalagi varian duriannya, rasanya mantap!” — <b>Rina, Tangerang</b></blockquote>
-      <blockquote>“Harga terjangkau, rasa juara! Cocok buat buka puasa.” — <b>Andi, Bogor</b></blockquote>
-    </section>
+    <!-- PRODUK 4 -->
+    <div class="produk-card">
+      <img src="matcha.png" class="produk-img">
+      <h3>Es Teler Matcha</h3>
+      <p>Sentuhan matcha yang menyegarkan.</p>
+      <p class="harga">Rp 13.000</p>
+      <button class="btn-pesan btn-order" data-nama="Es Teler Matcha" data-harga="13000">
+        Pesan Sekarang
+      </button>
+    </div>
 
-    <!-- ===== KONTAK ===== -->
-    <section id="kontak">
-      <h2>Hubungi Kami</h2>
-      <p>📍 Alamat: Jl. Kasih Sayang No. 45, Kota Tangerang</p>
-      <p>📞 Telepon: 08xx-xxx-xxx</p>
-      <p>📧 Email: estelersuper@gmail.com</p>
-    </section>
-  </main>
+    <!-- PRODUK 5 -->
+    <div class="produk-card">
+      <img src="coklat.png" class="produk-img">
+      <h3>Es Teler Coklat</h3>
+      <p>Perpaduan es teler dan coklat creamy.</p>
+      <p class="harga">Rp 13.000</p>
+      <button class="btn-pesan btn-order" data-nama="Es Teler Coklat" data-harga="13000">
+        Pesan Sekarang
+      </button>
+    </div>
 
-  <footer>
-    <p>© 2025 Es Teler Segar | Tugas Mandiri Web Analytics</p>
-  </footer>
+  </div>
+</section>
+
+<section id="kontak">
+  <h2>Kontak Usaha</h2>
+
+  <div class="kontak-container">
+
+    <a href="https://wa.me/6285158386044" target="_blank" class="kontak-item">
+      <i class="bi bi-whatsapp"></i>
+      <span>WhatsApp</span>
+    </a>
+
+    <a href="https://www.instagram.com/arst.renaa/" target="_blank" class="kontak-item">
+      <i class="bi bi-instagram"></i>
+      <span>Instagram</span>
+    </a>
+
+    <a href="mailto:estelersuper@gmail.com" class="kontak-item">
+      <i class="bi bi-envelope-fill"></i>
+      <span>Email</span>
+    </a>
+
+  </div>
+</section>
+
+
+</main>
+
+<footer>
+  <p>© 2025 Es Teler Segar | UMKM Kuliner Mahasiswa</p>
+</footer>
+
+<!-- FLOATING CART -->
+<div id="cart-float" onclick="openCart()">🛒 <span id="cart-count">0</span></div>
+
+<!-- TOAST -->
+<div id="toast">Produk ditambahkan ke keranjang ✅</div>
+
+<!-- MODAL -->
+<div id="cart-modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeCart()">×</span>
+    <h3>Checkout</h3>
+    <ul id="cart-list"></ul>
+    <p><b>Total:</b> Rp <span id="cart-total">0</span></p>
+    <button class="btn-pesan" onclick="checkoutWA()">Bayar via WhatsApp</button>
+    <p style="margin-top:10px">Atau Scan QR</p>
+    <div id="qrcode"></div>
+  </div>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FoodEstablishment",
+  "name": "Es Teler Segar",
+  "url": "https://renaarsita.github.io/es-teler-segerrr/",
+  "image": "https://renaarsita.github.io/es-teler-segerrr/assets/img/es-teler.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Jl. Kasih Sayang No.45",
+    "addressLocality": "Tangerang",
+    "addressCountry": "ID"
+  },
+  "telephone": "+628xxxxxxxx",
+  "servesCuisine": "Indonesian Fruit Drink",
+  "priceRange": "Rp10.000-Rp18.000"
+}
+</script>
+
+
+
+<script>
+let cart = [];
+
+document.querySelectorAll('.btn-order').forEach(btn => {
+  btn.onclick = function () {
+    if (this.innerText === 'Pesan Sekarang') {
+      this.innerText = 'Tambah';
+    } else {
+      cart.push({
+        nama: this.dataset.nama,
+        harga: parseInt(this.dataset.harga)
+      });
+      document.getElementById('cart-count').innerText = cart.length;
+      showToast();
+    }
+  }
+});
+
+function showToast() {
+  let t = document.getElementById('toast');
+  t.style.display = 'block';
+  setTimeout(() => t.style.display = 'none', 2000);
+}
+
+function openCart() {
+  if (!cart.length) return alert('Keranjang kosong');
+  document.getElementById('cart-modal').style.display = 'flex';
+
+  let list = document.getElementById('cart-list');
+  list.innerHTML = '';
+  let total = 0;
+
+  cart.forEach(i => {
+    list.innerHTML += `<li>${i.nama} - Rp ${i.harga}</li>`;
+    total += i.harga;
+  });
+
+  document.getElementById('cart-total').innerText = total.toLocaleString();
+  document.getElementById('qrcode').innerHTML = '';
+  new QRCode(document.getElementById("qrcode"), {
+    text: "Total Rp " + total,
+    width: 140,
+    height: 140
+  });
+}
+
+function closeCart() {
+  document.getElementById('cart-modal').style.display = 'none';
+}
+
+function checkoutWA() {
+  let text = 'Halo, saya ingin pesan:%0A';
+  cart.forEach(i => text += `- ${i.nama} (Rp ${i.harga})%0A`);
+
+  window.open(`https://wa.me/6285158386044?text=${text}`);
+
+  // ===== RESET SETELAH CHECKOUT =====
+  cart = [];
+  document.getElementById('cart-count').innerText = '0';
+  document.getElementById('cart-list').innerHTML = '';
+  document.getElementById('cart-total').innerText = '0';
+  document.getElementById('qrcode').innerHTML = '';
+
+  // Balikin tombol jadi "Pesan Sekarang"
+  document.querySelectorAll('.btn-order').forEach(btn => {
+    btn.innerText = 'Pesan Sekarang';
+  });
+
+  closeCart();
+}
+</script>
+
 </body>
 </html>
-
-
